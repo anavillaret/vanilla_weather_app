@@ -14,9 +14,129 @@
     />
   </head>
   <body>
-    <div class="container">
-      <h1>Hello World</h1>
-      <a href="" class="btn btn-primary">Click me</a>
+    <div id="root">
+      <div class="App">
+        <div class="container">
+          <div class="Weather">
+            <h1 id="title">Know the Weather</h1>
+            <form>
+              <div class="row">
+                <div class="col-9">
+                  <input
+                    type="search"
+                    placeholder="Type a city..."
+                    class="form-control search-input"
+                  />
+                </div>
+                <div class="col-3 p-0">
+                  <input
+                    type="submit"
+                    class="btn btn-primary w-100"
+                    value="Search"
+                  />
+                </div>
+              </div>
+            </form>
+<div class="WeatherInfo">
+    <div class="row">
+        <div class="col-6">
+            <h1>Lisbon</h1>
+            <ul>
+                <li>
+                    <span>
+                        "Monday"
+                        "13"
+                        ":"
+                        "09"
+                    </span>
+                    ", "
+                    "clear sky"
+                </li>
+                <li>
+                    "Humidity: "
+                    <strong>
+                        "50"
+                        "%"
+                    </strong>
+                    ", Wind:"
+                    <strong>
+                        "0.45"
+                        "Km/h"
+                    </strong>
+                </li>
+            </ul>
+        </div>
+        <div class="col-6">
+            <div class="temperature-container d-flex justify-content-end">
+                <canvas width="52" height="52">
+                    <div>
+                        <span class="temperature">4</span>
+                        <span class="unit">ºC</span>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="WeatherForecast row">
+    <div class="col">
+        <div class="WeatherForecastPreview">
+            <div class="forecast-time">Mon</div>
+            <canvas width="38" height="38">
+                <div class="forecast-temperature">
+                    <span class="forecast-temperature-max">11º</span>
+                    <span class="forecast-temnperatute-min">4º</span>
+                </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="WeatherForecastPreview">
+            <div class="forecast-time">Tue</div>
+            <canvas width="38" height="38">
+                <div class="forecast-temperature">
+                    <span class="forecast-temperature-max">10</span>
+                    <span class="forecast-temperature-min">6</span>
+                </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="WeatherForecastPreview">
+            <div class="forecast-time">Wed</div>
+            <canvas width="38" height="38">
+                <div class="forecast-temperature">
+                    <span class="forecast-temperature-max">12</span>
+                    <span class="forecast-temperature-min">6</span>
+                </div>
+        </div>
+    </div>
+<div class="col">
+        <div class="WeatherForecastPreview">
+            <div class="forecast-time">Thu</div>
+            <canvas width="38" height="38">
+                <div class="forecast-temperature">
+                    <span class="forecast-temperature-max">13</span>
+                    <span class="forecast-temperature-min">10</span>
+                </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="WeatherForecastPreview">
+            <div class="forecast-time">Fri</div>
+            <canvas width="38" height="38">
+                <div class="forecast-temperature">
+                    <span class="forecast-temperature-max">14</span>
+                    <span class="forecast-temperature-min">12</span>
+                </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <a href="https://github.com/anavillaret/vanilla_weather_app">Open source code</a>
+"by Ana Martins"
+</footer>
+
+          </div>
+        </div>
+      </div>
     </div>
     <script src="src/app.js"></script>
   </body>
